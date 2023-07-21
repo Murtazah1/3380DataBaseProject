@@ -1,0 +1,64 @@
+.insertForm{
+  display:block;
+}
+
+
+.FormHeader{
+  background-color:rgb(200, 16, 42);
+
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  text-align: center;
+
+}
+
+form{
+  background-color:lightgray;
+  margin-top: 75px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px
+}
+input{
+  border-radius: 10px;
+  padding:5px;
+  margin-left:20px;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+select{
+border-radius: 10px;
+  padding:5px;
+  margin-left:20px;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+input[type=submit]{
+  background-color: #C82300;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+
+  textarea{
+   border-radius: 10px;
+  padding:5px;
+  margin-left:20px;
+  width: 95%;
+  margin-bottom: 10px;
+  }

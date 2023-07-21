@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Department Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Insert Department Information</h1>
+	    <form class = "FormBox" action="updatecustomer.php" method="post">
+            <input type="number" name="DEPARTMENTID" placeholder="Department ID" required>
+            <br>
+
+            <input type="text" name="DEPARTNAME" placeholder="Department Name">
+            <br>
+
+            <input type="number" name="NUMOFEMPLOYEES" placeholder="Number of Employees">
+            <br>
+
+            <input type="text" name="MANAGER" placeholder="Manager">
+            <br>
+
+            <input type="number" name="LOCATION" placeholder="Location">
+            <br>
+
+            <input type="submit" value="Update Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

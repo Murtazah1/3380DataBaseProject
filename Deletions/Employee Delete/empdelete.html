@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Removal</title>
+    <link rel="stylesheet" type="text/css" href="deleteFormStyle.css">
+</head>
+<body>
+    <h1>Delete Employee Record</h1>
+    <form action="empdelete.php" method="POST">
+        <p>Enter Employee ID to delete</p>
+        <input type="number" name="ID" placeholder="Employee ID" min="10000000" max="99999999">
+        <p><i>min value: 10000000, max value: 99999999</i></p>
+        <button type="submit">Delete Record</button>
+
+    </form>
+
+    <button onclick="window.location.href='http://129.146.42.73/cosc3380/admin_page.html';">
+        Return to Home Page
+    </button> 
+</body>
+</html>

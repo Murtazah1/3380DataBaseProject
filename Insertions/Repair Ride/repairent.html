@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Repair Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Insert Repair Information</h1>
+	    <form class = "FormBox" action="repairentry.php" method="post">
+            <input type="number" name="COSTOFMAINTENANCE" step="any" placeholder="Cost of Maintenance" required>
+            <br>
+
+            <label for="DATEOFMAINTENANCE">Date of Maintenance</label>
+            <input type="date" name="DATEOFMAINTENANCE" placeholder="Date of Maintenance">
+            <br>
+
+            <input type="number" name="REPAIRID" placeholder="Repair ID (8 Digits)">
+            <br>
+            
+            <input type="number" name="RIDEREPAIRED" placeholder="Ride Repaired (3 Digits)">
+            <br>
+
+            <input type="submit" value="Update Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

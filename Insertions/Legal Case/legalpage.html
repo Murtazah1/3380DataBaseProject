@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Legal Entry</title>
+    <link rel="stylesheet" type="text/css" href="legalpagestyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<form class = "FormBox" action="legalentry.php" method="post">
+    <div>
+      <label for="caseid" class="large-label">Case ID</label>
+      <input id="caseid" type="text" />
+    </div>
+    <div>
+      <fieldset>
+        <legend class="large-label">Case Status</legend>
+        <input type="radio" name="grid" id="ongoing" value="ongoing" />
+        <label for="ongoing" class="small-label">Pending</label>
+        <input type="radio" name="grid" id="complete" value="complete" />
+        <label for="complete" class="small-label">Closed</label>
+      </fieldset>
+    </div>
+    <div>
+      <label for="type" class="large-label">Type of Case</label>
+      <select id="type">
+        <option value="negligence">Negligence</option>
+        <option value="injury">Injury</option>
+        <option value="premisesliability">Premises Liability</option>
+        <option value="copyright">Copyright</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="costofaccident" class="large-label">Cost of Accident</label>
+      <input id="costofaccident" type="text" />
+    </div>
+    <div>
+      <label for="rideidl" class="large-label">Ride ID</label>
+      <input id="rideidl" type="text"/>
+    </div>
+    <div>
+      <label for="thirdpartyfirm" class="large-label">Third Party Firm</label>
+      <input id="thirdpartyfirm" type="text" />
+    </div>
+    <div>
+      <label for="startdate" class="large-label">Start Date</label>
+      <input id="startdate" class="datebox" type="date" />
+    </div>
+    <div class="full-width">
+      <button type="submit">Send Response</button>
+      <button type="reset">Clear Form</button>
+    </div>
+  </form>    
+</body>
+</html>

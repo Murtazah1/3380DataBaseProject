@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Works on Ride Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Assign Employee to Ride</h1>
+	    <form class = "FormBox" action="workson_rideentry.php" method="post">
+            <label for="DATEOFLOG">Employee ID</label>
+            <input type="number" name="EMPID" placeholder="Employee ID">
+            <br>
+            <label for="DATEOFLOG">Ride ID</label>
+            <input type="number" name="RIDEID" step = "any" placeholder="Ride ID">
+            <br>
+
+            <input type="submit" value="Insert Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

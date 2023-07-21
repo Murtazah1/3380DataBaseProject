@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Customer Information</title>
+    <link rel="stylesheet" type="text/css" href="formsStyles.css">
+</head>
+<body style="background-color:whitesmoke">
+    <h1 class = "FormHeader"> Update Customer Record</h1>
+    <div class = "UpdateForm">
+	    <form class = "FormBox" action="updatecustomer.php" method="post">
+            <input type="number" name="ACCOUNTID" placeholder="Account ID" required>
+            <br>
+
+            <input type="text" name="NAMEOFCUSTOMER" placeholder="Customer Name">
+            <br>
+
+            <input type="text" name="PHONENUMBER" placeholder="Phone number">
+            <br>
+
+            <input type="text" name="CUSTPASS" placeholder="Password">
+            <br>
+
+            <label for="Birthday">Birthday</label>
+            
+            <input type="date" name="BIRTHDATE" placeholder="Birthdate">
+            <br>
+
+            <input type="text" name = "ADDRESS" placeholder="Address">
+            <br>
+
+            <input type="text" name = "EMAIL" placeholder="EMAIL">
+            <br>
+
+            <input type="submit" value="Update Record">
+	</form>
+
+
+    </div>
+    
+</body>
+</html>

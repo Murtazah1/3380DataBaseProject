@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ride Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class="insertForm">
+        <h1 class="FormHeader"> Insert Ride Information</h1>
+	    <form class="FormBox" action="ridesentry.php" method="post">
+            <input type="number" name="RIDEID" placeholder="Ride ID (3 Digits)" required><br>
+
+            <label for="LASTDATEOFMAINTAIN">Last Date of Maintenance</label>
+            <input type="date" name="LASTDATEOFMAINTAIN" placeholder="Last Date of Maintenance"><br>
+
+            <input type="text" name="TYPEOFRIDE" placeholder="Type of Ride"><br>
+            
+            <input type="number" name="COSTOFINSTALLATION" step="any" placeholder="Cost of Installation"><br>
+
+            <input type="text" name="RIDENAME" placeholder="Ride Name"><br>
+
+            <label for="ISRUNNING">Ride Running?</label>
+            <select name="ISRUNNING" required>
+                <option value="">Select</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select><br>
+
+            <label for="LOCATION">Location</label>
+            <select name="LOCATION" required>
+                <option value="">Select Location</option>
+                <option value="0">Entrance</option>
+                <option value="1">Wild West World</option>
+                <option value="2">Fantasylandia</option>
+                <option value="3">Ocean World</option>
+                <option value="4">Space Odyssey Park</option>
+                <option value="5">Medieval Kingdoms</option>
+                <option value="6">DinoLand Adventure</option>
+                <option value="7">Enchanted Forest Park</option>
+                <option value="8">Time Traveler's Park</option>
+                <option value="9">Adventure Oasis</option>
+            </select><br>
+
+            <input type="submit" value="Insert Record">
+	    </form>
+    </div>
+</body>
+</html>

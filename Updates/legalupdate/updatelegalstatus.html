@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Legal Status</title>
+    <link rel="stylesheet" type="text/css" href="updater.css">
+</head>
+<body>
+<h1 class = "FormHeader"> Update Legal Status</h1>
+<form action="updatelstatus.php" method="POST">
+    <select name="CASESTATUS">
+        <option value = "Ongoing">Ongoing</option>
+        <option value = "Pending">Pending</option>
+        <option value = "Closed">Closed</option>
+    </select>
+    <br>
+    <input type="NUMBER" name="CASEID" placeholder="CASE ID">
+    <br>
+    <input type="submit" name="submit" value="Submit">
+</form>   
+
+
+</body>
+</html>

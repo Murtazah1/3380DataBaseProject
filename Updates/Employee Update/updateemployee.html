@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Employee Record</title>
+	<link rel="stylesheet" type="text/css" href="updater.css">
+</head>
+<body>
+	<h1 class="FormHeader">Update Employee Record</h1>
+	<form action="updateemployee.php" method="post">
+		<input type="number" name="EMPLOYEEID" placeholder="Employee ID" required>
+        <br>
+
+		<input type="text" name="POSITION" placeholder="Position">
+        <br>
+
+		<input type="number" name="SALARY" placeholder="Salary">
+        <br>
+
+		<input type="text" name="NAMEOFEMPLOYEE" placeholder="Name">
+        <br>
+
+		<input type="date" name="BIRTHDATE" placeholder="Birthdate">
+        <br>
+
+		<input type="text" name="MANAGER" placeholder="Manager">
+        <br>
+
+		<select name="DEPARTMENTID" required>
+			<option value="">Select Department</option>
+			<option value="4">Restaurant</option>
+			<option value="3">Maintenance</option>
+			<option value="5">Shops</option>
+			<option value="1">Accounting</option>
+			<option value="2">Product Flow</option>
+			<option value="6">Operations</option>
+			<option value="7">Security</option>
+			<option value="8">HR</option>
+			<option value="9">Marketing</option>
+		</select>
+    <br>
+
+		<textarea name="ADDRESS" placeholder="Address" maxlength="100"></textarea>
+        <br>
+
+		<input type="submit" value="Update Record">
+	</form>
+</body>
+</html>

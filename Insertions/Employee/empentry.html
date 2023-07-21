@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class="insertForm">
+        <h1 class="FormHeader"> Insert Employee Information</h1>
+	    <form class="FormBox" action="employeeentry.php" method="post">
+            <input type="number" name="EMPLOYEEID" placeholder="Employee ID (8 Digits)" required><br>
+
+            <input type="text" name="POSITION" placeholder="Position"><br>
+
+            <input type="text" name="SEX" placeholder="Sex"><br>
+
+            <input type="number" name="SALARY" placeholder="Salary"><br>
+
+            <input type="text" name="NAMEOFEMPLOYEE" placeholder="Employee Name (First and last name)" required><br>
+
+            <label for="Birthday">Birthday</label>
+            <input type="date" name="BIRTHDATE" placeholder="Birthdate"><br>
+
+            <input type="number" name="MANAGER" placeholder="ID of Employee's Manager"><br>
+
+            <label for="DEPARTMENTID">Department</label>
+            <select name="DEPARTMENTID" required>
+                <option value="">Select Department</option>
+                <option value="4">Restaurant</option>
+                <option value="3">Maintenance</option>
+                <option value="5">Shops</option>
+                <option value="1">Accounting</option>
+                <option value="2">Product Flow</option>
+                <option value="6">Operations</option>
+                <option value="7">Security</option>
+                <option value="8">HR</option>
+                <option value="9">Marketing</option>
+            </select><br>
+
+            <input type="text" name="ADDRESS" placeholder="Address"><br>
+
+            <input type="submit" value="Insert Record">
+	    </form>
+    </div>
+</body>
+</html>

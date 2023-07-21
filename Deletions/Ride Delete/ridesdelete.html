@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ride Removal</title>
+        <link rel="stylesheet" type="text/css" href="deleteFormStyle.css">
+    </head>
+<body>
+<h1>Delete Ride Record</h1>
+<form action="ridesdelete.php" method="POST">
+    <p>
+        Enter Ride ID to delete
+    </p>
+    <input type="number" name="ID" placeholder="Enter ID of Ride to delete" min="100" max="999">
+    <p>
+        <i>min value: 100,max value: 999</i>
+    </p>
+    <button type="submit">submit<br></button>
+
+</form>   
+
+<button onclick="window.location.href='http://129.146.42.73/cosc3380/admin_page.html';">
+    Return to Home Page
+</button> 
+
+</body>
+</html>

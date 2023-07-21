@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shipment Cost Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Insert Shipment Cost Information</h1>
+	    <form class = "FormBox" action="shipcostentry.php" method="post">
+            <label for="DATEOFLOG">Date of Log</label>
+            <input type="date" name="DATEOFLOG" placeholder="Date of Log">
+            <br>
+
+            <input type="number" name="SHOPSHIP" step="any" placeholder="Shop Shipment Cost">
+            <br>
+            
+            <input type="number" name="RESTSHIP" step = "any" placeholder="Restaurant Shipment Cost">
+            <br>
+
+            <input type="submit" value="Update Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

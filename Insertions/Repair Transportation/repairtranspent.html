@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Repair Transportation Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Insert New Repair Transportation Information</h1>
+	    <form class = "FormBox" action="repairtranspentry.php" method="post">
+            <label for="DATEOFREP">Date of Maintenance</label>
+            <input type="date" name="DATEOFREP" placeholder="Date of Repair">
+            <br>
+
+            <input type="number" name="COSTOFREP" step="any" placeholder="Cost of Repair" required>
+            <br>
+
+            <input type="number" name="REPAIRID" placeholder="Transportation Repair Case Number (8 Digits)" required>
+            <br>
+            
+            <input type="number" name="TRANSPORTID" placeholder="ID of Transportation to Repair (6 Digits)">
+            <br>
+
+            <input type="submit" value="Insert Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

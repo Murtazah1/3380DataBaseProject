@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Merch Removal</title>
+        <link rel="stylesheet" type="text/css" href="deleteFormStyle.css">
+    </head>
+<body>
+<h1>Delete Merch Record</h1>
+<form action="merchdelete.php" method="POST">
+    <p>
+        Enter Merch ID to delete
+    </p>
+    <input type="number" name="ID" placeholder="Manager ID" min="100000" max="999999">
+    <p>
+        <i>min value: 100000,max value: 999999</i>
+    </p>
+    <button type="submit">submit<br></button>
+
+</form>  
+
+<button onclick="window.location.href='http://129.146.42.73/cosc3380/admin_page.html';">
+    Return to Home Page
+</button> 
+
+
+</body>
+</html>

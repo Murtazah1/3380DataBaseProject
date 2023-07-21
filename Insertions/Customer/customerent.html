@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Stats Entry</title>
+    <link rel="stylesheet" type="text/css" href="insertFormStyle.css">
+</head>
+<body style="background-color:whitesmoke">
+	<div class = "insertForm">
+        <h1 class = "FormHeader"> Insert Customer Record Information</h1>
+	    <form class = "FormBox" action="customerentry.php" method="post">
+            <input type="number" name="ACCOUNTID" placeholder="Account ID (6 Digits)" required>
+            <br>
+
+            <input type="text" name="NAMEOFCUSTOMER" placeholder="Customer Name (First and last name)">
+            <br>
+
+            <input type="text" name = "EMAIL" placeholder="Email">
+            <br>
+
+            <input type="text" name="CUSTPASS" placeholder="Password">
+            <br>
+
+            <input type="text" name="PHONENUMBER" placeholder="Phone number (###-###-####)">
+            <br>
+
+            <label for="Birthday">Birthday</label>
+            
+            <input type="date" name="BIRTHDATE" placeholder="Birthdate">
+            <br>
+
+            <input type="text" name = "ADDRESS" placeholder="Address">
+            <br>
+
+            <input type="submit" value="Insert Record">
+	</form>
+
+    </div>
+    
+</body>
+</html>

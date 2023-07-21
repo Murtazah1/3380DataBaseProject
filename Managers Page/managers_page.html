@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Manager Page</title>
+        <style>
+            
+/* Says Welcome back*/
+.loginBar{
+    background: slategray;
+    padding:0 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.logout{
+    display:inline-block;
+}
+
+.welcomeText{
+    display:inline-block;
+    color:white;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header{
+    display:block;
+}
+
+.editsBar{
+    background-color: rgb(200,16,46 );
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display:inline-block;
+    height:150px;
+    width:300px;
+}
+
+
+/*admin home page text*/
+.titleText{
+    display:inline-block;
+    font-size:50px;
+    position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.DataReports{
+    display:inline-block;
+}
+
+.DataUpdate{
+    display:inline-block;
+}
+
+.DataInsert{
+    display:inline-block;
+
+}
+
+.DataDeletion{
+    display:inline-block;
+}
+
+
+/*entires in a drop down button*/
+.entry{
+    display:block;
+}
+
+
+
+/*Drop Down Container*/
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Hover over button will reveal links*/
+.dropDown:hover .dropDownContent {
+    display:block;
+}
+
+/*Hovering over drop down button will change background*/
+.dropDown:hover .dropDownBtn{
+    background-color:lightgray;
+}
+
+.dropDownBtn{
+    background-color:transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:-5px;
+    border:none;
+}
+
+
+.dropDownContent{
+    display:none; 
+    position:absolute;
+    background-color: #f1f1f1;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.dropDownContent a{
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 100px;
+
+}
+
+/*Hovering over link will change background*/
+.dropDownContent a:hover{
+    background-color: #ddd;
+    display:inline-block;
+    min-width: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+        </style>
+    </head>
+    <body style="background-color: whitesmoke">
+        <div class = "main-header">
+
+            <img class = "logo" src = "parkLogo.png">
+            <p class = titleText>
+               <b>
+                    Manager's Home Page
+               </b>  
+            </p>
+
+        </div>
+
+        <div class = "loginBar">
+            <p class = "welcomeText">
+                Welcome Back! What do you need to do today?
+            </p>
+            <a class = logout href = "http://129.146.42.73/cosc3380/login.php">
+                Log out
+            </a>
+        </div>
+
+        <div class = "editsBar">
+            <div class = "DataReports">
+                <div class = "dropDown">
+                    <button class = "dropDownBtn"> See Data Reports &#x25BC </button>
+                    <div class="dropDownContent">
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/datarep1.html">
+                            Total Profits 
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/datarep2.html">
+                            List of Entities in a Location 
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/datarep3.html">
+                            Cost of a Ride
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+    
+            <div class = "DataUpdate">
+                <div class = "dropDown">
+                    <button class = "dropDownBtn"> Update Data &#x25BC </button>
+                    <div class="dropDownContent">
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/reventry.html">
+                            Daily Revenue
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/merchupdate.html">
+                            Merch 
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/updaterestaurantsrevenue.html">
+                            Restaurant Revenue
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/updatenumstaffrestaurant.html">
+                            Restaurant Number of Staff
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/updateshoprevenue.html">
+                            Shop Revenue
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/updatenumstaffshop.html">
+                            Shop Number of Staff
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class = "DataInsert">
+                <div class = "dropDown">
+                    <button class = "dropDownBtn"> Insert New Data &#x25BC </button>
+                    <div class="dropDownContent">
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/workson_repentry.html">
+                            Assign Employee to Repair
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/workson_resentry.html">
+                            Assign Emplyoee to Restaurant
+                        </a>
+                        <a class = "entry" href = "http://129.146.42.73/cosc3380/workson_shopsent.html">
+                            Assign Employee to a Shop
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img class = "background" src = "Ferris Wheel.webp">
+    </body>
+
+    
+
+</html>

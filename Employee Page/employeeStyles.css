@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://www.tampabay.com/resizer/mCVJPKDDKj8gyM5iLezkbVXmMwE=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/tbt/XPQISKQCBFG7PK6BFTTV2ZXQMA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  flex-direction: column;
+
+}
+.logout{
+  display:inline-block;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #BBBBBB;
+  height: 50vh;
+  max-height: 95%;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: white;
+  border: gray;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button a {
+  color:white;
+  text-decoration: 0;
+}
+
+.entry-button {
+  background-color: rgba(200, 16, 46);
+}
+
+.update-button {
+  background-color: slategrey;
+}
